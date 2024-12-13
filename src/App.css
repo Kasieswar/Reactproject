@@ -1,38 +1,300 @@
-.App {
+*{
+  margin: 0;
+  flex-wrap: wrap;
+}
+/* Login */
+
+.login-div{
+  overflow-x: hidden;
+}
+
+.login-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #00897b;
+  animation: fadeIn 1s ease-out;
+}
+
+
+.login-text h1{
+  font-size: 2.5rem;
+  color: #f4f4f4;
+  margin-bottom: 15px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.login-text p{
+  font-size: 1.2rem;
+  color: #f4f4f4;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.login-form{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e0f2f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form form input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.signup-link{
+  text-align: center;
+  margin-top: 15px;
+}
+
+button{
+  width: 100%;
+  padding: 5px;
+  background-color: #0073e6;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+}
+
+button:hover{
+  background-color: #005bb5;
+  transition: background-color 0.5s ease;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn{
+  from{
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Signup  */
+
+.signup-main{
+  background-color: #00897b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fadeIn 1s ease-out;
+}
+
+.signup-form{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0f2f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h2{
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.signup-form form input{
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.signup-form p{
+  text-align: center;
+  font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signup-text{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: #f4f4f4;
+  animation: slideInRight 1s 0.5s forwards ease-out;
+}
+.signuptext h1{
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.signup-text p{
+  font-size: 1.2rem;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideInLeft{
+  0%{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight{}
+
+/* Header */
+header{
+  background-color: rgba(0, 128, 0, 0.646);
   color: white;
+  text-align: right;
 }
 
-.App-link {
-  color: #61dafb;
+header button{
+  margin: 1%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* SideNav */
+
+.side{ 
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  background-color: #00897b;
+  padding-top: 20px;
+  border-right: 5px solid #dee2e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+} 
+
+.side ul { 
+  list-style-type: none;
+}
+
+.side li {
+  text-align: center;
+  margin-bottom: 70%;
+  text-decoration: none;
+  font-size: 18px;
+  color: #f4f4f4;
+  padding: 5px;
+} 
+
+.side li:hover { 
+  background-color: #e9ecef;
+  color: #000;
+  border-radius: 5px;
+}
+
+
+
+/* Dashboard */
+/* Basic Styling */
+.sec {
+  padding: 10px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.sec:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7; /* Add a subtle hover background */
+}
+
+.image-card {
+  width: 170px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-card img:hover {
+  transform: scale(1.1); /* Slightly zoom in the image */
+  filter: brightness(0.9); /* Add a dimming effect on hover */
+}
+
+.section-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.section-heading:hover {
+  color: #007bff; /* Color change on hover */
+  transform: translateX(5px);
+}
+
+@media (max-width: 767px) {
+  .sec {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .image-card {
+    width: 150px;
+    height: 200px;
+  }
+  
+  .section-heading {
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
+
