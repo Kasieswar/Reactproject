@@ -1,25 +1,25 @@
 import React, { createContext, useState } from 'react'
-import WatchDet from '../../Data/WatchDet'
+import { useParams } from 'react-router-dom'
+import BraceletDet from '../../Data/BraceletDet'
 import { Col, Row } from 'react-bootstrap'
 import Sidenav from '../../Sidenav'
-import { useParams } from 'react-router-dom'
 import Topbar from '../../Topbar'
 
 export const useContext = createContext()
 
-function WatchDisplay() {
+function BraceletDisplay() {
   const [cart, setCart] =useState(0)
     let { id } = useParams()
-    let productDisplay = WatchDet.find((item)=> item.id == id)
+    let productDisplay = BraceletDet.find((item)=> item.id == id)
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid p-5'>
       <Row>
         <Col sm={2}>
             <Sidenav />
         </Col>
         <Col sm={10}>
             <useContext.Provider value={cart}>
-             <Topbar />
+              <Topbar />
             </useContext.Provider>
             <div className='container-fluid  d-flex justify-content-around align-items-center flex-wrap' key={productDisplay.id}>
                 <div style={{width:'50%'}}>
@@ -29,7 +29,7 @@ function WatchDisplay() {
                   <h5>{productDisplay.name}</h5>
                   <h6>Price : ₹{productDisplay.price}</h6>
                   <p>Brand : {productDisplay.brand}</p>
-                  <p>Band-color : {productDisplay.bandcolor}</p>
+                  <p>Size : {productDisplay.size}</p>
                   <button className='btn btn-secondary' style={{width:'25%'}} onClick={() => setCart(cart+1)}>Add to cart</button>
                 </div>
             </div>
@@ -39,4 +39,4 @@ function WatchDisplay() {
   )
 }
 
-export default WatchDisplay
+export default BraceletDisplay

@@ -11,6 +11,10 @@ import Wallet from './Components/Modules/Wallet';
 import Shoes from './Components/Modules/Shoes';
 import Bracelet from './Components/Modules/Bracelet';
 import WatchDisplay from './Components/Modules/Display/WatchDisplay';
+import WalletDisplay from './Components/Modules/Display/WalletDisplay';
+import ShoeDisplay from './Components/Modules/Display/ShoeDisplay';
+import BraceletDisplay from './Components/Modules/Display/BraceletDisplay';
+import CartPage from './Components/Modules/Display/CartPage';
 
 
 
@@ -29,8 +33,12 @@ function App() {
           <Route path='/watches' element={<WatchesPage/>} />
           <Route path='/watches/:id' element={<WatchDisplay />} />
           <Route path='/wallet' element={<Wallet />} />
+          <Route path='/wallet/:id' element={<WalletDisplay />} />          
           <Route path='/shoes' element={<Shoes />} />
+          <Route path='/shoes/:id' element={<ShoeDisplay />} /> 
           <Route path='/bracelet' element={<Bracelet />} />
+          <Route path='/bracelet/:id' element={<BraceletDisplay />} />
+          <Route path='/cartpage' element={<CartPage />} />
         </Routes>
       </Router>
       

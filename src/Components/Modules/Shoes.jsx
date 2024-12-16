@@ -2,6 +2,7 @@ import React from 'react'
 import { Carousel, Col, Row } from 'react-bootstrap'
 import Sidenav from '../Sidenav'
 import ShoeDet from '../Data/ShoeDet'
+import { Link } from 'react-router-dom'
 
 function Shoes() {
   return (
@@ -74,13 +75,14 @@ function Shoes() {
             {
               ShoeDet.map((shoe)=>{
                 return(
+                  <Link to={`/shoes/${shoe.id}`}>
                   <div key={shoe.id} style={{border:'1px solid #ddd', padding:'10px', margin:'1%',width:'280px',backgroundColor:'#e0f2f1'}}>
                     <img src={shoe.image} alt={shoe.name} style={{width:'100%',height:'300px', border:'1px solid #ddd'}}/>
                     <h5>Brand : {shoe.brand}</h5>
                     <h6>Price : ₹{shoe.price}</h6>
                     
                     
-                  </div>
+                  </div></Link>
                 )
               })
             }

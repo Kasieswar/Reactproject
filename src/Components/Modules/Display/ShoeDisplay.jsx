@@ -1,16 +1,17 @@
 import React, { createContext, useState } from 'react'
-import WatchDet from '../../Data/WatchDet'
-import { Col, Row } from 'react-bootstrap'
+import ShoeDet from '../../Data/ShoeDet'
 import Sidenav from '../../Sidenav'
+import { Col, Row } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import Topbar from '../../Topbar'
 
 export const useContext = createContext()
 
-function WatchDisplay() {
+function ShoeDisplay() {
+
   const [cart, setCart] =useState(0)
     let { id } = useParams()
-    let productDisplay = WatchDet.find((item)=> item.id == id)
+    let productDisplay = ShoeDet.find((item)=> item.id == id)
   return (
     <div className='container-fluid'>
       <Row>
@@ -19,7 +20,7 @@ function WatchDisplay() {
         </Col>
         <Col sm={10}>
             <useContext.Provider value={cart}>
-             <Topbar />
+              <Topbar />
             </useContext.Provider>
             <div className='container-fluid  d-flex justify-content-around align-items-center flex-wrap' key={productDisplay.id}>
                 <div style={{width:'50%'}}>
@@ -29,7 +30,7 @@ function WatchDisplay() {
                   <h5>{productDisplay.name}</h5>
                   <h6>Price : ₹{productDisplay.price}</h6>
                   <p>Brand : {productDisplay.brand}</p>
-                  <p>Band-color : {productDisplay.bandcolor}</p>
+                  <p>Style : {productDisplay.style}</p>
                   <button className='btn btn-secondary' style={{width:'25%'}} onClick={() => setCart(cart+1)}>Add to cart</button>
                 </div>
             </div>
@@ -39,4 +40,4 @@ function WatchDisplay() {
   )
 }
 
-export default WatchDisplay
+export default ShoeDisplay

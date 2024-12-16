@@ -2,6 +2,7 @@ import React from 'react'
 import Sidenav from '../Sidenav'
 import { Carousel, Col, Row } from 'react-bootstrap'
 import BraceletDet from '../Data/BraceletDet'
+import { Link } from 'react-router-dom'
 
 function Bracelet() {
   return (
@@ -73,12 +74,13 @@ function Bracelet() {
               {
                 BraceletDet.map((bracelet)=>{
                   return(
-                    <div key={bracelet.id} style={{border:'1px solid #ddd', padding:'10px', margin:'1%',width:'240px',backgroundColor:'#e0f2f1'}}> 
-                      <img src={bracelet.image} alt={bracelet.name} style={{width:'100%',height:'250px', border:'1px solid #ddd'}}/>
+                    <Link to={`/bracelet/${bracelet.id}`} >
+                    <div key={bracelet.id} style={{border:'1px solid #ddd', padding:'10px', margin:'1%',width:'280px',backgroundColor:'#e0f2f1'}}> 
+                      <img src={bracelet.image} alt={bracelet.name} style={{width:'100%',height:'300px', border:'1px solid #ddd'}}/>
                       <h5>Brand : {bracelet.brand}</h5>
                       <h6>Price : ₹{bracelet.price}</h6>
                       
-                    </div>
+                    </div></Link>
                   )
                 })
               }

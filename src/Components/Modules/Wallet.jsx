@@ -2,6 +2,7 @@ import React from 'react'
 import { Carousel, Col, Row } from 'react-bootstrap'
 import Sidenav from '../Sidenav'
 import WalletDet from '../Data/WalletDet'
+import { Link } from 'react-router-dom'
 
 function Wallet() {
   return (
@@ -74,12 +75,13 @@ function Wallet() {
             {
               WalletDet.map((wallet)=>{
                 return(
+                  <Link to={`/wallet/${wallet.id}`}>
                   <div key={wallet.id} style={{border:'1px solid #ddd', padding:'10px', margin:'1%',width:'280px',backgroundColor:'#e0f2f1'}}>
                     <img src={wallet.image} alt={wallet.name} style={{width:'100%',height:'300px', border:'1px solid #ddd'}}/>
                     <h5>Brand : {wallet.brand}</h5>
                     <h5>Price : ₹{wallet.price}</h5>
                     
-                  </div>
+                  </div></Link>
                 )
               })
             }
