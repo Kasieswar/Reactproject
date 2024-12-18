@@ -1,10 +1,12 @@
+import watch1 from './Images/Watch1.png'
+
 const WatchDet = [
     {
         id:1,
         name:"Vintage A158WA-1DF Black Digital Dial Silver Stainless Steel Band D011",
         brand:"Casio",
         price:1695,
-        image:"https://m.media-amazon.com/images/I/61ybeKQto8L._SY679_.jpg",
+        image:watch1,
         bandcolor:"Silver"
     },
     {

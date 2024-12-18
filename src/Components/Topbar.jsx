@@ -1,22 +1,21 @@
-import React from 'react'
-import { useContext } from "./Modules/Display/WatchDisplay";
-import { useContextWal } from "./Modules/Display/WalletDisplay";
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react'
+
+import { Link } from 'react-router-dom'
+import { CartContext } from './Modules/Display/CartContext'
 
 function Topbar() {
-  return (
-    <div className='container-fluid border p-2 d-flex justify-content-end' style={{paddingTop:'10px'}}>
-      <Link to={'/cartpage'}>
-        <useContext.Consumer>
-          {value=><div>
-            <button className='btn btn-warning'>Cart({value})</button>
-            </div>}
-        </useContext.Consumer>
-        
-        </Link>
-        
-    </div>
-  )
+   
+    const { cart } = useContext(CartContext)
+
+  
+    return (
+        <div className="topbar">
+            <div className="cart-info">
+                {/* Display the cart count */}
+                <Link to={'/cartpage'} className="link"><h5>Cart ({cart.length})</h5></Link>
+            </div>
+        </div>
+    )
 }
 
 export default Topbar

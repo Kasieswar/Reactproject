@@ -74,12 +74,12 @@ function WatchesPage() {
             </Carousel>
 
             
-            <div className='p-5' style={{display:'flex',justifyContent:'space-around',flexWrap:'wrap'}}>
+            <div  style={{display:'flex',justifyContent:'space-around',flexWrap:'wrap',paddingLeft:"20px"}}>
               {
                 WatchDet.map((watch)=>{
                   return(
                     <Link to={`/watches/${watch.id}`} className='text-decoration-none'>
-                    <div key={watch.id} style={{border:'1px solid #ddd', padding:'10px', margin:'1%',width:'240px',backgroundColor:'#e0f2f1'}}> 
+                    <div key={watch.id} style={{border:'1px solid #ddd', padding:'10px', margin:'1%',width:'280px',backgroundColor:'#e0f2f1'}}> 
                       <img src={watch.image} alt={watch.name} style={{width:'100%',height:'300px', border:'1px solid #ddd'}}/>
                       <h5>Brand : {watch.brand}</h5>
                       <h6>Price : ₹{watch.price}</h6>

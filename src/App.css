@@ -1,6 +1,7 @@
 *{
   margin: 0;
-  flex-wrap: wrap;
+  padding: 0;
+ 
 }
 /* Login */
 
@@ -218,83 +219,128 @@ header button{
 
 /* Dashboard */
 
-.sec {
-  padding: 10px;
-  height: auto;
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+.carousel{
+  margin-bottom: 10px;
+}
+
+/* Columns */
+.section-col-left {
+  padding-left: 55px;
+  background-color: #e0f2f1;
+  margin: 20px;
+}
+
+.section-row{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.sec:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  background-color: #f7f7f7; /* Add a subtle hover background */
+.section-col-right { 
+  background-color: #e0f2f1;
+  margin: 20px;
+} 
+
+/* Main container */
+.main {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.section-heading:hover {
+  color: #007bff;  /* Add hover effect to headings */
+}
+
+/* Image card container */
+.sec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .image-card {
-  width: 170px;
-  height: 220px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  overflow: hidden;
+  margin: 10px;
   position: relative;
+  border-radius: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Add shadow on hover */
 }
 
-.image-card img {
-  width: 100%;
-  height: 100%;
-  
-  transition: transform 0.3s ease, filter 0.3s ease;
+.image-card-img {
+  width: 150px;
+  height: 200px;
+  border-radius: 5px;
+   /* Keeps aspect ratio and avoids stretching */
 }
 
-.image-card img:hover {
-  transform: scale(1.1); /* Slightly zoom in the image */
-  filter: brightness(0.9); /* Add a dimming effect on hover */
-}
-
-.section-heading {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-  position: relative;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.section-heading:hover {
-  color: #007bff; /* Color change on hover */
-  transform: translateX(5px);
-}
-
-@media (max-width: 767px) {
-  .sec {
-    flex-direction: column;
-    align-items: center;
+/* Add responsive behavior */
+@media (max-width: 768px) {
+  .section-col-left, .section-col-right {
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  
-  .image-card {
-    width: 150px;
-    height: 200px;
-  }
-  
   .section-heading {
     font-size: 1.5rem;
-    text-align: center;
+  }
+  .image-card-img {
+    width: 100px;
+    height: 130px;
+  }
+}
+
+/* Top bar  */
+
+.topbar {
+  background-color: #333; 
+  color: #fff; 
+  padding: 15px 20px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  position: fixed;
+  width: 100%; 
+  top: 0; 
+}
+
+/* Cart Info Styling */
+.cart-info {
+  font-size: 18px; 
+  font-weight: bold;
+}
+
+/* Styling for Link component */
+.cart-info .link {
+  color: #fff; 
+  text-decoration: none; 
+  transition: color 0.3s ease-in-out; 
+}
+
+.cart-info .link:hover {
+  color: #f4a261; 
+}
+
+
+
+/* Responsive Design: Make the topbar smaller on mobile */
+@media (max-width: 768px) {
+  .topbar {
+      padding: 10px 15px; /* Reduce padding on smaller screens */
+  }
+
+  .cart-info h5 {
+      font-size: 16px; /* Make the cart count text smaller */
   }
 }
 

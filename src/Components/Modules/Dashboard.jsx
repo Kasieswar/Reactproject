@@ -21,7 +21,7 @@ function Dashboard() {
 
         <Col sm={10} className='m-0'>
         {/* Carousel */}
-          <Carousel interval={3000} fade={true}>
+          <Carousel interval={3000} fade={true} className='carousel'>
             <Carousel.Item>
               <img
                 className="d-block w-100"
@@ -79,71 +79,68 @@ function Dashboard() {
             </Carousel.Item>
           </Carousel>
           
-          <Row >
-            <Col sm={7} style={{paddingLeft:"55px"}}>
+          <Row className="section-row">
+        <Col sm={6} className="section-col-left">
+          <Link to="/watches" className='text-decoration-none'>
+            <div className="main">
               <h3 className="section-heading">Crafted for Every Second</h3>
-              <Link to="/watches">
-              <div className='sec'>
-              
-                {
-                  Display.map((watch)=> {
-                    return(
-                      <div className="image-card">
-                        <img src={watch.image} alt="" style={{width:"170px",height:"220px",borderRadius:"5px"}}/>
-                      </div>
-                    )
-                  })
-                }
-              </div></Link>
-            </Col>
-            <Col sm={5}>
-                <h3 className="section-heading">Sleek. Smart. Secure.</h3>
-                <Link to={"/wallet"}>
-                <div className='sec'>
-                  {
-                    DisplayWal.map((wallet)=>{
-                      return(
-                        <div className="image-card">
-                          <img src={wallet.image} alt="" style={{width:"170px",height:"220px",borderRadius:"5px"}}/>
-                        </div>
-                      )
-                    })
-                  }
-                </div></Link>
-            </Col>
-          </Row>
-          <Row>
-            <Col sm={5} style={{paddingLeft:"55px"}}>
+              <div className="sec">
+                {Display.map((watch) => (
+                  <div className="image-card">
+                    <img src={watch.image} alt="watch" className="image-card-img" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Link>
+        </Col>
+        <Col sm={5} className="section-col-right">
+          <Link to="/wallet" className='text-decoration-none'>
+            <div className="main">
+              <h3 className="section-heading">Sleek. Smart. Secure.</h3>
+              <div className="sec">
+                {DisplayWal.map((wallet) => (
+                  <div className="image-card">
+                    <img src={wallet.image} alt="wallet" className="image-card-img" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Link>
+        </Col>
+      </Row>
+
+      {/* Second Row */}
+      <Row className="section-row">
+        <Col sm={5} className="section-col-left">
+          <Link to="/bracelet" className='text-decoration-none'>
+            <div className="main">
               <h3 className="section-heading">Wear Your Confidence</h3>
-              <Link to={"/bracelet"}>
-              <div className='sec'>
-                {
-                  DisplayBracelet.map((bracelet)=>{
-                    return(
-                      <div className="image-card">
-                        <img src={bracelet.image} alt="" style={{width:"170px",height:"220px",borderRadius:"5px"}}/>
-                      </div>
-                    )
-                  })
-                }
-              </div></Link>
-            </Col>
-            <Col sm={7}>
-                <h3 className="section-heading">Step into Comfort and Class</h3>
-                <Link to={"/shoes"}>
-                <div className='sec'>
-                  {
-                    DisplayShoe.map((shoe)=>{
-                      return(
-                        <div className="image-card">
-                          <img src={shoe.image} alt="" style={{width:"170px",height:"220px",borderRadius:"5px"}}/>
-                        </div>
-                      )
-                    })
-                  }
-                </div></Link>
-            </Col>
-          </Row>
+              <div className="sec">
+                {DisplayBracelet.map((bracelet) => (
+                  <div className="image-card">
+                    <img src={bracelet.image} alt="bracelet" className="image-card-img" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Link>
+        </Col>
+        <Col sm={6} className="section-col-right">
+          <Link to="/shoes" className='text-decoration-none'>
+            <div className="main">
+              <h3 className="section-heading">Step into Comfort and Class</h3>
+              <div className="sec">
+                {DisplayShoe.map((shoe) => (
+                  <div className="image-card">
+                    <img src={shoe.image} alt="shoe" className="image-card-img" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Link>
+        </Col>
+      </Row>
         </Col>
       </Row>
     </div>

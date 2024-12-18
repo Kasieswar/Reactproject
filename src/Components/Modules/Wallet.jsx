@@ -75,7 +75,7 @@ function Wallet() {
             {
               WalletDet.map((wallet)=>{
                 return(
-                  <Link to={`/wallet/${wallet.id}`}>
+                  <Link to={`/wallet/${wallet.id}`} className='text-decoration-none'>
                   <div key={wallet.id} style={{border:'1px solid #ddd', padding:'10px', margin:'1%',width:'280px',backgroundColor:'#e0f2f1'}}>
                     <img src={wallet.image} alt={wallet.name} style={{width:'100%',height:'300px', border:'1px solid #ddd'}}/>
                     <h5>Brand : {wallet.brand}</h5>

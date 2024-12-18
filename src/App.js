@@ -15,6 +15,7 @@ import WalletDisplay from './Components/Modules/Display/WalletDisplay';
 import ShoeDisplay from './Components/Modules/Display/ShoeDisplay';
 import BraceletDisplay from './Components/Modules/Display/BraceletDisplay';
 import CartPage from './Components/Modules/Display/CartPage';
+import { CartProvider } from './Components/Modules/Display/CartContext';
 
 
 
@@ -24,7 +25,7 @@ function App() {
     <div>
 
       <Router>
-        
+        <CartProvider>
         <Routes>
           <Route path='/' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
@@ -40,6 +41,7 @@ function App() {
           <Route path='/bracelet/:id' element={<BraceletDisplay />} />
           <Route path='/cartpage' element={<CartPage />} />
         </Routes>
+        </CartProvider>
       </Router>
       
    </div>

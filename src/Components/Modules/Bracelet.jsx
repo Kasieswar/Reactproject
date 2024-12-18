@@ -74,7 +74,7 @@ function Bracelet() {
               {
                 BraceletDet.map((bracelet)=>{
                   return(
-                    <Link to={`/bracelet/${bracelet.id}`} >
+                    <Link to={`/bracelet/${bracelet.id}`} className='text-decoration-none'>
                     <div key={bracelet.id} style={{border:'1px solid #ddd', padding:'10px', margin:'1%',width:'280px',backgroundColor:'#e0f2f1'}}> 
                       <img src={bracelet.image} alt={bracelet.name} style={{width:'100%',height:'300px', border:'1px solid #ddd'}}/>
                       <h5>Brand : {bracelet.brand}</h5>
