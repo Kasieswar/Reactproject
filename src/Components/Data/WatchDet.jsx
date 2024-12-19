@@ -92,7 +92,7 @@ const WatchDet = [
         name:"Men's Minimalist Zen Analog Blue Watch: Sleek Leather Strap with Contrast Hands",
         brand:"Titan",
         price:1596,
-        image:"https://m.media-amazon.com/images/I/71Otg3PyGSL._SY679_.jpg",
+        image:watch9,
         bandcolor:"Blue"
     },
     {
@@ -100,7 +100,7 @@ const WatchDet = [
         name:"Premium Round Diamond Silver Dial Analogue Watch for Women's and Girl's",
         brand:"Acnos®",
         price:299,
-        image:"https://m.media-amazon.com/images/I/71Zg0BSSpUL._SY679_.jpg",
+        image:watch10,
         bandcolor:"Multicolour"
     },
     {
@@ -108,7 +108,7 @@ const WatchDet = [
         name:"Quartz Analog Blue Dial Stainless Steel Strap Watch for Guys",
         brand:"Fastrack ",
         price:1079,
-        image:"https://m.media-amazon.com/images/I/51rkfCCjh0L._SX679_.jpg",
+        image:watch11,
         bandcolor:"Silver"
     },
     {
@@ -116,7 +116,7 @@ const WatchDet = [
         name:"Analogue Women's Watch (Pink Dial Silver Colored Strap)",
         brand:"AUREX",
         price:419,
-        image:"https://m.media-amazon.com/images/I/91rQIHyaNGL._SX679_.jpg",
+        image:watch12,
         bandcolor:"Silver"
     },
     {
@@ -124,7 +124,7 @@ const WatchDet = [
         name:"Wear Your Look Quartz Analog Pink Dial Leather Strap Watch for Girls",
         brand:"Fastrack",
         price:1996,     
-        image:"https://m.media-amazon.com/images/I/61ey-iSMs8S._SX679_.jpg",
+        image:watch13,
         bandcolor:"Pink"
     },
     {
@@ -132,7 +132,7 @@ const WatchDet = [
         name:"Analog Business Casual Stainless Steel Decorative Subdials Watch for Men",
         brand:"LONGBO",
         price:791,
-        image:"https://m.media-amazon.com/images/I/81cD4xqlg2L._SY679_.jpg",
+        image:watch14,
         bandcolor:"Silver"
     },
     {
@@ -140,7 +140,7 @@ const WatchDet = [
         name:"Analog Champagne Dial Metal Strap Watch for Women",
         brand:"Sonata Quartz",
         price:1125,
-        image:"https://m.media-amazon.com/images/I/61lK9Q7dpsL._SY679_.jpg",
+        image:watch15,
         bandcolor:"Gold"
     },
     {
@@ -148,7 +148,7 @@ const WatchDet = [
         name:"Analog Men's Watch (Gold Dial Colored Strap)",
         brand:"REDUX",
         price:399,
-        image:"https://m.media-amazon.com/images/I/812moxVoL9L._SY679_.jpg",
+        image:watch16,
         bandcolor:"Gold"
     },
     {
@@ -156,7 +156,7 @@ const WatchDet = [
         name:"Analog Boy's & Men's Watch (Blue Dial Blue Colored Strap)",
         brand:"REDUX",
         price:329,
-        image:"https://m.media-amazon.com/images/I/81BDpSIwu3L._SY679_.jpg",
+        image:watch17,
         bandcolor:"Blue"
     },
     {
@@ -164,7 +164,7 @@ const WatchDet = [
         name:"Women's Precision Simplicity Analog Watch: Grey Gradient Dial with Leather Strap",
         brand:"Titan",
         price:1796,
-        image:"https://m.media-amazon.com/images/I/51dI3AAwQRL._SX679_.jpg",
+        image:watch18,
         bandcolor:"Brown"
     },
     {
@@ -172,15 +172,15 @@ const WatchDet = [
         name:"Silicone Digital Men Watch (Black Dial Green Colored Strap), Green Band",
         brand:"V2A",
         price:691,
-        image:"https://m.media-amazon.com/images/I/51BWB-s8-BL._SY679_.jpg",
+        image:watch19,
         bandcolor:"Green"
     },
     {
         id:20,
         name:"Women Stainless Steel Core Analog Purple Dial Watch",
-        brand:"Fastrack",
+        brand:"NIBOSI",
         price:1468,
-        image:"https://m.media-amazon.com/images/I/61hkDNpAlbL._SY679_.jpg",
+        image:watch20,
         bandcolor:"Silver"
     },
     {
@@ -188,7 +188,7 @@ const WatchDet = [
         name:"Vintage Series Digital Rose Gold Dial Women's Watch",
         brand:"Casio",
         price:5995,
-        image:"https://m.media-amazon.com/images/I/61wzQ5j0GUL._SX679_.jpg",
+        image:watch21,
         bandcolor:"Rose Gold"
     }
 ]
