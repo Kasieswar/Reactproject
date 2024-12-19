@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Reactproject/static/css/main.dc38bf61.css",
+    "main.js": "/Reactproject/static/js/main.aed8dfe7.js",
+    "static/js/453.58ccb6d3.chunk.js": "/Reactproject/static/js/453.58ccb6d3.chunk.js",
+    "static/media/Watch17.png": "/Reactproject/static/media/Watch17.f224bfc8d5a259f6f5e6.png",
+    "static/media/Watch16.png": "/Reactproject/static/media/Watch16.07cde4e339a69e8f9f11.png",
+    "static/media/Watch12.png": "/Reactproject/static/media/Watch12.98705b9c0a49e40e3c27.png",
+    "static/media/Watch6.png": "/Reactproject/static/media/Watch6.b9aa1528a41e52886dc2.png",
+    "static/media/Watch14.png": "/Reactproject/static/media/Watch14.bb9cf741c44a4887fc90.png",
+    "static/media/Watch18.png": "/Reactproject/static/media/Watch18.612d47f0e5e02020d1f5.png",
+    "static/media/Watch20.png": "/Reactproject/static/media/Watch20.8e00da2222297de54e05.png",
+    "static/media/Watch9.png": "/Reactproject/static/media/Watch9.193dbf8a7056c1480888.png",
+    "static/media/Watch11.png": "/Reactproject/static/media/Watch11.0cd971131ac3d8f34615.png",
+    "static/media/Watch10.png": "/Reactproject/static/media/Watch10.b7e77967f210fbdbb8df.png",
+    "static/media/Watch19.png": "/Reactproject/static/media/Watch19.bacb44071fcf6004d21d.png",
+    "static/media/Watch4.png": "/Reactproject/static/media/Watch4.64f0a6eb1c1315201058.png",
+    "static/media/Watch1.png": "/Reactproject/static/media/Watch1.c6e378fe60cd739ad457.png",
+    "static/media/Watch21.png": "/Reactproject/static/media/Watch21.7089ed6d77968bb70e1e.png",
+    "static/media/Watch15.png": "/Reactproject/static/media/Watch15.5776698258ffaff3d113.png",
+    "static/media/Watch13.png": "/Reactproject/static/media/Watch13.5133d0dacaa4e33ad1b0.png",
+    "static/media/Watch3.png": "/Reactproject/static/media/Watch3.05afdc6d4cc256af9bb6.png",
+    "static/media/Watch8.png": "/Reactproject/static/media/Watch8.c30d826dcd4cf1e93268.png",
+    "static/media/Watch5.png": "/Reactproject/static/media/Watch5.20f7766fb398e4361c18.png",
+    "static/media/Watch2.png": "/Reactproject/static/media/Watch2.a62c23c3e256e86f9bfe.png",
+    "static/media/Watch7.png": "/Reactproject/static/media/Watch7.da6214a113ae77738b34.png",
+    "index.html": "/Reactproject/index.html",
+    "main.dc38bf61.css.map": "/Reactproject/static/css/main.dc38bf61.css.map",
+    "main.aed8dfe7.js.map": "/Reactproject/static/js/main.aed8dfe7.js.map",
+    "453.58ccb6d3.chunk.js.map": "/Reactproject/static/js/453.58ccb6d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc38bf61.css",
+    "static/js/main.aed8dfe7.js"
+  ]
+}
