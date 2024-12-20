@@ -6,16 +6,7 @@ import { Col, Row, } from 'react-bootstrap';
 
 function Login() {
   return (
-    // <div className='container log'>
-    //     <h3>Login Here</h3>
-    //     <form action="">
-    //         <input type="text" placeholder='Enter UserName' className='form-control'/>
-    //         <input type="password" placeholder='Enter Password' className='form-control'/>
-    //     </form>
-    //     <Link to={"/signup"}><p>Don't u have an account?</p></Link>
-    //     <Link to={"/dashboard"}><button className='btn btn-outline-secondary'>Login</button></Link>
-
-    // </div>
+    
     <div className='login-div'>
       <Row className='login-main'>
         <Col sm={5} className='login-text'>

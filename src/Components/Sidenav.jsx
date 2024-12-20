@@ -11,7 +11,7 @@ function Sidenav() {
           <Link to={"/shoes"}><li>Shoes</li></Link>
           <Link to={"/wallet"}><li>Wallet</li></Link> 
           <Link to={"/bracelet"}><li>Bracelet</li></Link>
-          <Link to={"/"}><li style={{backgroundColor:'#ff4b4bb5',borderRadius:"5px" }}>Logout</li></Link>
+          <Link to={"/Reactproject"}><li style={{backgroundColor:'#ff4b4bb5',borderRadius:"5px" }}>Logout</li></Link>
         </ul>
     </div>
   )

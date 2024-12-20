@@ -13,8 +13,8 @@ function Signup() {
             <input type="text" placeholder='Enter your Full name' required />
             <input type="email" placeholder='Enter your email' required />
             <input type="password" placeholder='Enter your password' required />
-            <Link to={"/"}><p className='login-link'>Already have an account?</p></Link>
-            <Link to={"/"}><button type='submit'>SignUp</button></Link>
+            <Link to={"/Reactproject"}><p className='login-link'>Already have an account?</p></Link>
+            <Link to={"/Reactproject"}><button type='submit'>SignUp</button></Link>
           </form>
         </Col>
 

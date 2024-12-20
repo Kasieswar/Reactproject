@@ -27,7 +27,7 @@ function App() {
       <Router>
         <CartProvider>
         <Routes>
-          <Route path='/' element={<Login />} />
+          <Route path='/Reactproject' element={<Login />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/sidenav' element={<Sidenav />} />
           <Route path='/dashboard' element={<Dashboard />} />
