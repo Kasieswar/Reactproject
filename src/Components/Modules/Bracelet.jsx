@@ -70,7 +70,7 @@ function Bracelet() {
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
-            <div style={{display:'flex',justifyContent:'space-around',flexWrap:'wrap'}}>
+            <div style={{display:'flex',justifyContent:'space-around',flexWrap:'wrap',paddingLeft:"20px"}}>
               {
                 BraceletDet.map((bracelet)=>{
                   return(
