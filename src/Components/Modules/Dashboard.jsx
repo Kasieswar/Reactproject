@@ -15,11 +15,11 @@ function Dashboard() {
   return (
     <div className='container-fluid p-0'>
       <Row>
-        <Col sm={2}>
+        <Col md={2} xs={12} className='col-2'>
           <Sidenav />
         </Col>
 
-        <Col sm={10} className='m-0'>
+        <Col md={10} xs={12} className='m-0 col-10'>
         {/* Carousel */}
           <Carousel interval={3000} fade={true} className='carousel'>
             <Carousel.Item>
@@ -80,7 +80,7 @@ function Dashboard() {
           </Carousel>
           
           <Row className="section-row">
-        <Col sm={6} className="section-col-left">
+        <Col md={6} sm={12} className="section-col-left">
           <Link to="/watches" className='text-decoration-none'>
             <div className="main">
               <h3 className="section-heading">Crafted for Every Second</h3>
@@ -94,7 +94,7 @@ function Dashboard() {
             </div>
           </Link>
         </Col>
-        <Col sm={5} className="section-col-right">
+        <Col md={5} sm={12} className="section-col-right">
           <Link to="/wallet" className='text-decoration-none'>
             <div className="main">
               <h3 className="section-heading">Sleek. Smart. Secure.</h3>
@@ -112,7 +112,7 @@ function Dashboard() {
 
       {/* Second Row */}
       <Row className="section-row">
-        <Col sm={5} className="section-col-left">
+        <Col md={5} sm={12} className="section-col-left">
           <Link to="/bracelet" className='text-decoration-none'>
             <div className="main">
               <h3 className="section-heading">Wear Your Confidence</h3>
@@ -126,7 +126,7 @@ function Dashboard() {
             </div>
           </Link>
         </Col>
-        <Col sm={6} className="section-col-right">
+        <Col md={6} sm={12} className="section-col-right">
           <Link to="/shoes" className='text-decoration-none'>
             <div className="main">
               <h3 className="section-heading">Step into Comfort and Class</h3>

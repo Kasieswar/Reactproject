@@ -219,6 +219,37 @@ header button{
 
 /* Dashboard */
 
+@media (max-width: 768px) {
+  .col-2 {
+    width: 100%; /* Sidebar takes full width on small screens */
+    position: static; /* Sidebar is no longer fixed */
+    margin-bottom: 20px;
+  }
+
+  .col-10 {
+    width: 100%; /* Content takes full width on small screens */
+    margin-left: 0; /* No margin on the left when sidebar is stacked */
+  }
+
+  .carousel {
+    height: auto; /* Make the carousel responsive */
+  }
+
+  .section-col-left, .section-col-right {
+    margin-bottom: 20px; /* Add some space between the sections */
+  }
+}
+
+/* Optional: Add some custom styles for larger screens */
+@media (min-width: 768px) {
+  .col-2 {
+    width: 20%; /* Sidebar width on large screens */
+  }
+
+  .col-10 {
+    width: 80%; /* Content takes the remaining width */
+  }
+}
 .carousel{
   margin-bottom: 10px;
 }
