@@ -1,10 +1,32 @@
+import shoe1 from './Images/shoe1.png'
+import shoe2 from './Images/shoe2.png'
+import shoe3 from './Images/shoe3.png'
+import shoe4 from './Images/shoe4.png'
+import shoe5 from './Images/shoe5.png'
+import shoe6 from './Images/shoe6.png'
+import shoe7 from './Images/shoe7.png'
+import shoe8 from './Images/shoe8.png'
+import shoe9 from './Images/shoe9.png'
+import shoe10 from './Images/shoe10.png'
+import shoe11 from './Images/shoe11.png'
+import shoe12 from './Images/shoe12.png'
+import shoe13 from './Images/shoe13.png'
+import shoe14 from './Images/shoe14.png'
+import shoe15 from './Images/shoe15.png'
+import shoe16 from './Images/shoe16.png'
+import shoe17 from './Images/shoe17.png'
+import shoe18 from './Images/shoe18.png'
+import shoe19 from './Images/shoe19.png'
+import shoe20 from './Images/shoe20.png'
+import shoe21 from './Images/shoe21.png'
+
 const ShoeDet = [
     {
         id: 1,
         name: "Sports Running Shoes for Men's & Boy's",
         brand: "BRUTON ",
         price: 499,
-        image: "https://m.media-amazon.com/images/I/71E62fc1NeL._SY695_.jpg",
+        image: shoe1,
         style: "Sneaker"
     },
     {
@@ -12,7 +34,7 @@ const ShoeDet = [
         name: "Men's Sports Shoes with Lightweight Phylon Sole for Men's & Boy's",
         brand: "ASIAN",
         price: 1316,
-        image: "https://m.media-amazon.com/images/I/81L8It8HwWL._SY695_.jpg",
+        image: shoe2,
         style: "Sneaker"
     },
     {
@@ -20,7 +42,7 @@ const ShoeDet = [
         name: "Casual Sneaker Shoes PARADISE-01 Sneakers for Women",
         brand: "ASIAN",
         price: 580,
-        image: "https://m.media-amazon.com/images/I/71v6STXRsgL._SY695_.jpg",
+        image: shoe3,
         style: "Sneaker"
     },
     {
@@ -28,7 +50,7 @@ const ShoeDet = [
         name: "Campus Women's Zoe Plus Walking Shoe",
         brand: "Campus",
         price: 727,
-        image: "https://m.media-amazon.com/images/I/61SxCMSA3GL._SY695_.jpg",
+        image: shoe4,
         style: "Running Shoe"
     },
     {
@@ -36,7 +58,7 @@ const ShoeDet = [
         name: "Vendoz Women & Girls White Casual Sports Shoes Sneakers - 36 EU",
         brand: "Vendoz",
         price: 588,
-        image: "https://m.media-amazon.com/images/I/71CipZEQkLL._SY625_.jpg",
+        image: shoe5,
         style: "Sneaker"
     },
     {
@@ -44,7 +66,7 @@ const ShoeDet = [
         name: "Puma Women's Cilia Wedge Sneaker",
         brand: "Puma",
         price: 4179,
-        image: "https://m.media-amazon.com/images/I/41WogN7w9ML._SY695_.jpg",
+        image: shoe6,
         style: "Sneaker"
     },
     {
@@ -52,7 +74,7 @@ const ShoeDet = [
         name: "Campus Mens Oxyfit (N) Walking Shoes",
         brand: "Campus",
         price: 729,
-        image: "https://m.media-amazon.com/images/I/61ePa5fEKnL._SY695_.jpg",
+        image: shoe7,
         style: "Sneaker"
     },
     {
@@ -60,7 +82,7 @@ const ShoeDet = [
         name: "Boss-Grip Black Derby Shoes for Men",
         brand: "Bata",
         price: 659,
-        image: "https://m.media-amazon.com/images/I/71rYxtbE8SS._SX695_.jpg",
+        image: shoe8,
         style: "Derby"
     },
     {
@@ -68,7 +90,7 @@ const ShoeDet = [
         name: "Lancer Men's Sports Running Shoes Indus-251",
         brand: "Lancer",
         price: 554,
-        image: "https://m.media-amazon.com/images/I/61RFlIUeaIL._SY695_.jpg",
+        image: shoe9,
         style: "Running"
     },
     {
@@ -76,7 +98,7 @@ const ShoeDet = [
         name: "Reebok Mens Stride RunnerRunning Shoe",
         brand: "Reebok",
         price: 1349,
-        image: "https://m.media-amazon.com/images/I/51Inwb0gwLL._SY695_.jpg",
+        image: shoe10,
         style: "Running"
     },
     {
@@ -84,7 +106,7 @@ const ShoeDet = [
         name: "YOHO Chonks Women’s Sporty Comfortable Chunky Sneakers",
         brand: "YOHO",
         price: 1799,
-        image: "https://m.media-amazon.com/images/I/61FPXtyqdoL._SY695_.jpg",
+        image: shoe11,
         style: "Sneaker"
     },
     {
@@ -92,7 +114,7 @@ const ShoeDet = [
         name: "FAUSTO Women's Stylish Hook & Loop Sneakers ",
         brand: "FAUSTO",
         price: 942,
-        image: "https://m.media-amazon.com/images/I/61TgIoz6HUL._SY695_.jpg",
+        image: shoe12,
         style: "Sneaker"
     },
     {
@@ -100,7 +122,7 @@ const ShoeDet = [
         name: "SPARX Women's Mesh Walking Shoe",
         brand: "SPARX",
         price: 826,
-        image: "https://m.media-amazon.com/images/I/61s2q33DBaL._SY695_.jpg",
+        image: shoe13,
         style: "Athletic"
     },
     {
@@ -108,7 +130,7 @@ const ShoeDet = [
         name: "Campus Women's Raye Running Shoe",
         brand: "Campus",
         price: 949,
-        image: "https://m.media-amazon.com/images/I/719nvqpwspL._SY695_.jpg",
+        image: shoe14,
         style: "Mid-Top"
     },
     {
@@ -116,7 +138,7 @@ const ShoeDet = [
         name: "Mens Comfortable Lightweight Outdoor Lace Up Classy Casual Sport Shoes",
         brand: "AADI",
         price: 669,
-        image: "https://m.media-amazon.com/images/I/61jrtg7fU-L._SY695_.jpg",
+        image: shoe15,
         style: "Running Shoes"
     },
     {
@@ -124,7 +146,7 @@ const ShoeDet = [
         name: "Men NITROEDGE-01 Running and Gym wear Running Shoes with Laces",
         brand: "ASIAN",
         price: 1229,
-        image: "https://m.media-amazon.com/images/I/81heMkdQlFL._SY695_.jpg",
+        image: shoe16,
         style: "Sneaker"
     },
     {
@@ -132,7 +154,7 @@ const ShoeDet = [
         name: "Bata Mens Slipon Walking Shoes Trek Grey",
         brand: "Bata",
         price: 556,
-        image: "https://m.media-amazon.com/images/I/51u461LQQQL._SY695_.jpg",
+        image: shoe17,
         style: "Sneaker"
     },
     {
@@ -140,7 +162,7 @@ const ShoeDet = [
         name: "Campus Men's First Running Shoe",
         brand: "Campus",
         price: 999,
-        image: "https://m.media-amazon.com/images/I/61+u7BBiaxL._SY695_.jpg",
+        image: shoe18,
         style: "Running Shoe"
     },
     {
@@ -148,7 +170,7 @@ const ShoeDet = [
         name: "Puma Women's Pop Sneaker",
         brand: "Puma",
         price: 1845,
-        image: "https://m.media-amazon.com/images/I/51ksEORgP2L._SY695_.jpg",
+        image: shoe19,
         style: "Sneaker"
     },
     {
@@ -156,7 +178,7 @@ const ShoeDet = [
         name: "Casual Shoes Colorblock Sneakers with Ultra Soft Cushion Lace-Up Shoes",
         brand: "Centrino",
         price: 799,
-        image: "https://m.media-amazon.com/images/I/61HGJsiNtgL._SY695_.jpg",
+        image: shoe20,
         style: "Sneaker"
     },
     {
@@ -164,7 +186,7 @@ const ShoeDet = [
         name: "Vendoz Women White Stylish Casual Sneakers",
         brand: "Vendoz",
         price: 557,
-        image: "https://m.media-amazon.com/images/I/51eVlts2QvL._SY695_.jpg",
+        image: shoe21,
         style: "Sneaker"
     },
 ]

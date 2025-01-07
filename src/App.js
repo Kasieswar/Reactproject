@@ -3,7 +3,6 @@ import './App.css';
 import Login from './Components/Login'
 import Signup from './Components/Signup'
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Header from './Components/Header'
 import Sidenav from './Components/Sidenav'
 import Dashboard from './Components/Modules/Dashboard'
 import WatchesPage from './Components/Modules/WatchesPage';

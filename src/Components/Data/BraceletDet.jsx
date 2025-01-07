@@ -1,10 +1,34 @@
+import bracelet1 from './Images/bracelet1.png'
+import bracelet2 from './Images/bracelet2.png'
+import bracelet3 from './Images/bracelet3.png'
+import bracelet4 from './Images/bracelet4.png'
+import bracelet5 from './Images/bracelet5.png'
+import bracelet6 from './Images/bracelet6.png'
+import bracelet7 from './Images/bracelet7.png'
+import bracelet8 from './Images/bracelet8.png'
+import bracelet9 from './Images/bracelet9.png'
+import bracelet10 from './Images/bracelet10.png'
+import bracelet11 from './Images/bracelet11.png'
+import bracelet12 from './Images/bracelet12.png'
+import bracelet13 from './Images/bracelet13.png'
+import bracelet14 from './Images/bracelet14.png'
+import bracelet15 from './Images/bracelet15.png'
+import bracelet16 from './Images/bracelet16.png'
+import bracelet17 from './Images/bracelet17.png'
+import bracelet18 from './Images/bracelet18.png'
+import bracelet19 from './Images/bracelet19.png'
+import bracelet20 from './Images/bracelet20.png'
+import bracelet21 from './Images/bracelet21.png'
+
+
+
 const BraceletDet = [
     {
         id: 1,
         name: "Clara Anti-Tarnish 92.5 Sterling Silver Bracelet 8 inch",
         brand: "Clara",
         price: 2899,
-        image: "https://m.media-amazon.com/images/I/512cVXtpL1L._SY535_.jpg",
+        image: bracelet1,
         size: "8 inches"
     },
     {
@@ -12,7 +36,7 @@ const BraceletDet = [
         name: "Black Base Metal Leather Funky Multistrand Guitar Charm Bracelet for Men",
         brand: "University Trendz",
         price: 219,
-        image: "https://m.media-amazon.com/images/I/61hOQ6WQz+L._SX535_.jpg",
+        image: bracelet2,
         size: "Regular"
     },
     {
@@ -20,7 +44,7 @@ const BraceletDet = [
         name: "Leather with Stainless Steel Magnetic Clasp Blue Bracelet for Men",
         brand: "Moneekar Jewels",
         price: 649,
-        image: "https://m.media-amazon.com/images/I/71eiKviWe8L._SY535_.jpg",
+        image: bracelet3,
         size: "8.5 inch"
     },
     {
@@ -28,7 +52,7 @@ const BraceletDet = [
         name: "Gift Natural Gemstone Crystal Beads Buddha Bracelet.",
         brand: "Young & Forever ",
         price: 420,
-        image: "https://m.media-amazon.com/images/I/71pSImadg4L._SY535_.jpg",
+        image: bracelet4,
         size: "6 inches"
     },
     {
@@ -36,7 +60,7 @@ const BraceletDet = [
         name: "Valentine Gift Rose Gold Plated Pink Flowers Bracelet",
         brand: "Om Jewells",
         price: 189,
-        image: "https://m.media-amazon.com/images/I/71RzYyzhsoL._SY535_.jpg",
+        image: bracelet5,
         size: "Adjustable"
     },
     {
@@ -44,7 +68,7 @@ const BraceletDet = [
         name: "Swiss Zirconia Sterling Silver Grazia Solitaire Bracelet Gift For Women",
         brand: "Clara",
         price: 1999,
-        image: "https://m.media-amazon.com/images/I/51VxkJ51nAL._SY535_.jpg",
+        image: bracelet6,
         size: "7.5 inches"
     },
     {
@@ -52,7 +76,7 @@ const BraceletDet = [
         name: "Silver 100% Stainless Steel 14mm Thick Link Chain Bracelet for men",
         brand: "Aaishwarya",
         price: 1017,
-        image: "https://m.media-amazon.com/images/I/51WLOuRWrWL._SY535_.jpg",
+        image: bracelet7,
         size: "Regular"
     },
     {
@@ -60,7 +84,7 @@ const BraceletDet = [
         name: "Men's Bracelet Genuine Leather Brown Black",
         brand: "Moneekar Jewels",
         price: 899,
-        image: "https://m.media-amazon.com/images/I/41wCRMvCj5L.jpg",
+        image: bracelet8,
         size: "7.5 inches"
     },
     {
@@ -68,7 +92,7 @@ const BraceletDet = [
         name: "Rudraksha Kadas American Diamond Gold Meena Bracelets",
         brand: "MIAMI",
         price: 249,
-        image: "https://m.media-amazon.com/images/I/81VAcZm42dL._SY535_.jpg",
+        image: bracelet9,
         size: "Regular"
     },
     {
@@ -76,7 +100,7 @@ const BraceletDet = [
         name: "Gold Plated Twist & Shine Bracelet o fAlloy With Crystal For Women",
         brand: "Mahi",
         price: 298,
-        image: "https://m.media-amazon.com/images/I/61gR3m0eXaL._SY535_.jpg",
+        image: bracelet10,
         size: "Regular"
     },
     {
@@ -84,7 +108,7 @@ const BraceletDet = [
         name: "Oviya Magical Love Tripple Heart Bracelet with Crystal Stones",
         brand: "Oviya",
         price: 199,
-        image: "https://m.media-amazon.com/images/I/714vg3ggn9L._SY535_.jpg",
+        image: bracelet11,
         size: "Adjustable"
     },
     {
@@ -92,7 +116,7 @@ const BraceletDet = [
         name: "7 Chakra Certified Natural Stones 8-9mm Crystal Beads Multicolor Bracelet",
         brand: "Young & Forever ",
         price: 399,
-        image: "https://m.media-amazon.com/images/I/71a5Xr+NtpL._SY535_.jpg",
+        image: bracelet12,
         size: "One size"
     },
     {
@@ -100,7 +124,7 @@ const BraceletDet = [
         name: "University Trendz PU Leather Bracelet For Mens & Boys",
         brand: "University Trendz",
         price: 200,
-        image: "https://m.media-amazon.com/images/I/71QbrwVxFhL._SY535_.jpg",
+        image: bracelet13,
         size: "8.2 inches"
     },
     {
@@ -108,7 +132,7 @@ const BraceletDet = [
         name: "Moneekar Jewels Metal Stainless Steel Bracelet for Men",
         brand: "Moneekar Jewels",
         price: 499,
-        image: "https://m.media-amazon.com/images/I/41pyMbOsTUL.jpg",
+        image: bracelet14,
         size: "8.5 inches"
     },
     {
@@ -116,7 +140,7 @@ const BraceletDet = [
         name: "Silverwala Men's Silver Rubber Kada (Silver, Black)",
         brand: "Silverwala",
         price: 1060,
-        image: "https://m.media-amazon.com/images/I/61OMANIWdmL._SX695_.jpg",
+        image: bracelet15,
         size: "Free size"
     },
     {
@@ -124,7 +148,7 @@ const BraceletDet = [
         name: "Lava Rock 7 Chakras Aromatherapy Essential Oil Diffuser Bracelet Bangle",
         brand: "Doitory Hamoery ",
         price: 349,
-        image: "https://m.media-amazon.com/images/I/61jETqf7agL._SX695_.jpg",
+        image: bracelet16,
         size: "One size"
     },
     {
@@ -132,7 +156,7 @@ const BraceletDet = [
         name: "Reiki Crystal Products Rose Quartz Heart, Floral Bracelet for Unisex Adult(Pink)",
         brand: "Reiki Crystal",
         price: 284,
-        image: "https://m.media-amazon.com/images/I/51wTPV7QSnL._SY535_.jpg",
+        image: bracelet17,
         size: "Regular"
     },
     {
@@ -140,7 +164,7 @@ const BraceletDet = [
         name: "Swiss Zirconia 925 Sterling Silver Sandra Solitaire Bracelet for Women and Girls",
         brand: "Clara",
         price: 2729,
-        image: "https://m.media-amazon.com/images/I/61oxWhOU1OL._SY535_.jpg",
+        image: bracelet18,
         size: "7.5 inches"
     },
     {
@@ -148,7 +172,7 @@ const BraceletDet = [
         name: "Metal & Stainless Steel Cubic Zirconia Bracelet for Men (Golden)",
         brand: "Moneekar Jewels ",
         price: 1999,
-        image: "https://m.media-amazon.com/images/I/41ichsAyGCL.jpg",
+        image: bracelet19,
         size: "Regular"
     },
     {
@@ -156,7 +180,7 @@ const BraceletDet = [
         name: "University Trendz Leather Bracelet for Men",
         brand: "University Trendz",
         price: 159,
-        image: "https://m.media-amazon.com/images/I/41fCcqKHGdL.jpg",
+        image: bracelet20,
         size: "Free size"
     },
     {
@@ -164,7 +188,7 @@ const BraceletDet = [
         name: "Metal Stainless Steel Bracelet for Mens",
         brand: "Moneekar Jewels ",
         price: 449,
-        image: "https://m.media-amazon.com/images/I/51J+zC1AHHL._SY535_.jpg",
+        image: bracelet21,
         size: "2.8"
     },
 ]

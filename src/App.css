@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 100vh;
   background-color: #00897b;
   animation: fadeIn 1s ease-out;
@@ -39,6 +40,7 @@
   align-items: center;
   background: #e0f2f1;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .login-form h2{
@@ -96,6 +98,77 @@ button:hover{
   }
 }
 
+
+/* For tablets and small devices */
+@media (max-width: 768px) {
+  .login-main {
+    flex-direction: column;  /* Stack the columns vertically */
+  }
+
+  .login-text {
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px; /* Add some spacing */
+    width: 100%; /* Ensure text container takes full width */
+  }
+
+  .login-text h1 {
+    font-size: 2rem; /* Adjust font size */
+  }
+
+  .login-text p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+
+  .login-form {
+    width: 100%;
+    height: auto; /* Allow form container to adjust to content height */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculations */
+    margin-top: 20px; /* Add spacing between text and form */
+  }
+
+  .login-form h2 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .login-form form input {
+    padding: 12px; /* Increase padding for touch-friendly inputs */
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1.1rem; /* Increase button font size */
+  }
+
+  .signup-link {
+    margin-top: 20px; /* Add spacing for the link */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .login-text h1 {
+    font-size: 1.8rem; /* Reduce font size */
+  }
+
+  .login-text p {
+    font-size: 1rem; /* Adjust text size for mobile */
+  }
+
+  .login-form h2 {
+    font-size: 1.5rem; /* Adjust font size for small screens */
+  }
+
+  .login-form form input {
+    font-size: 1rem; /* Reduce input font size */
+  }
+
+  button {
+    font-size: 1rem; /* Keep button text size consistent */
+  }
+}
+  
 /* Signup  */
 
 .signup-main{
@@ -103,6 +176,7 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 100vh;
   animation: fadeIn 1s ease-out;
 }
@@ -114,6 +188,7 @@ button:hover{
   align-items: center;
   background-color: #e0f2f1;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .signup-form h2{
@@ -142,7 +217,6 @@ button:hover{
   flex-direction: column;
   justify-content: center;
   color: #f4f4f4;
-  animation: slideInRight 1s 0.5s forwards ease-out;
 }
 .signuptext h1{
   font-size: 2.5rem;
@@ -166,27 +240,89 @@ button:hover{
   }
 }
 
-@keyframes slideInRight{}
 
-/* Header */
-header{
-  background-color: rgba(0, 128, 0, 0.646);
-  color: white;
-  text-align: right;
+@media (max-width: 768px) {
+  .signup-main {
+    flex-direction: column;  /* Stack the columns vertically */
+    height: 100vh; /* Let the height adjust based on content */
+  }
+
+  .signup-form {
+    width: 100%;
+    height: auto; /* Allow form to adjust its height */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculations */
+    margin-top: 20px; /* Add spacing between text and form */
+  }
+
+  .signup-text {
+    width: 100%;
+    text-align: center; /* Center text on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .signup-text h1 {
+    font-size: 2rem; /* Reduce font size */
+  }
+
+  .signup-text p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+
+  .signup-form h2 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .signup-form form input {
+    padding: 14px; /* Increase padding for touch-friendly inputs */
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1.1rem; /* Increase button font size */
+  }
+
+  .signup-form p {
+    font-size: 1.1rem; /* Increase font size for small screens */
+  }
 }
 
-header button{
-  margin: 1%;
+/* For mobile phones */
+@media (max-width: 480px) {
+  .signup-text h1 {
+    font-size: 1.8rem; /* Adjust font size for small screens */
+  }
+
+  .signup-text p {
+    font-size: 1rem; /* Adjust text size for mobile */
+  }
+
+  .signup-form h2 {
+    font-size: 1.5rem; /* Adjust font size for small screens */
+  }
+
+  .signup-form form input {
+    font-size: 1rem; /* Reduce input font size */
+  }
+
+  button {
+    font-size: 1rem; /* Keep button text size consistent */
+  }
+
+  .signup-text {
+    padding: 0 10px; /* Add padding on mobile for better spacing */
+  }
 }
 
 /* SideNav */
 
-.side{ 
+.side { 
   height: 100vh;
   width: 250px;
   position: fixed;
   top: 0;
-  left: 0; 
+  left: 0;
   background-color: #00897b;
   padding-top: 20px;
   border-right: 5px solid #dee2e6;
@@ -194,107 +330,172 @@ header button{
   justify-content: center;
   align-items: center;
   z-index: 999;
-} 
+}
 
 .side ul { 
   list-style-type: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .side li {
   text-align: center;
-  margin-bottom: 70%;
-  text-decoration: none;
+  margin-bottom: 20px;
   font-size: 18px;
   color: #f4f4f4;
-  padding: 5px;
-} 
+  padding: 10px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-.side li:hover { 
+.side li:hover {
   background-color: #e9ecef;
   color: #000;
   border-radius: 5px;
+}
+
+.side .logout-btn {
+  background-color: #ff4b4bb5;
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+.mobile-header {
+  display: none;
+  background-color: #00897b;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.mobile-header ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 0; 
+}
+
+.mobile-header li{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.mobile-header li:hover{
+  background-color: #e9ecef;
+  color: #000;
+  border-radius: 5px;
+}
+
+.mobile-header .logout-btn {
+  background-color: #ff4b4bb5;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Responsive Styles */
+
+
+@media (max-width: 768px) {
+  
+  .side {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block; 
+    padding-top: 15px; 
+  }
+
+  .mobile-header ul {
+    flex-direction: row; 
+    justify-content: space-around; 
+  }
+
+  .mobile-header li{
+    font-size: 14px; 
+    padding: 12px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .mobile-header li{
+    font-size: 12px; 
+    padding: 10px 8px; 
+  }
 }
 
 
 
 /* Dashboard */
 
+.col-10 {
+  margin-left: 400px;
+}
+
+/* For smaller screens */
+@media (max-width: 1024px) {
+  
+  .col-10 {
+    margin-left: 200px;
+  }
+}
+
 @media (max-width: 768px) {
-  .col-2 {
-    width: 100%; /* Sidebar takes full width on small screens */
-    position: static; /* Sidebar is no longer fixed */
-    margin-bottom: 20px;
-  }
-
+  
   .col-10 {
-    width: 100%; /* Content takes full width on small screens */
-    margin-left: 0; /* No margin on the left when sidebar is stacked */
+    margin-left: 0;  
   }
 
-  .carousel {
-    height: auto; /* Make the carousel responsive */
-  }
-
-  .section-col-left, .section-col-right {
-    margin-bottom: 20px; /* Add some space between the sections */
-  }
 }
 
-/* Optional: Add some custom styles for larger screens */
-@media (min-width: 768px) {
-  .col-2 {
-    width: 20%; /* Sidebar width on large screens */
-  }
 
-  .col-10 {
-    width: 80%; /* Content takes the remaining width */
-  }
-}
-.carousel{
-  margin-bottom: 10px;
-}
-
-/* Columns */
-.section-col-left {
-  padding-left: 55px;
-  background-color: #e0f2f1;
-  margin: 20px;
-}
-
-.section-row{
+.section-row {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
-.section-col-right { 
+.section-col-left, .section-col-right {
+  border-radius: 10px;
   background-color: #e0f2f1;
-  margin: 20px;
-} 
+  margin-bottom: 10px;
+  padding-left: 55px;
+}
 
-/* Main container */
 .main {
   text-align: center;
 }
 
 .section-heading {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: 500;
   color: #333;
   transition: color 0.3s ease;
 }
 
 .section-heading:hover {
-  color: #007bff;  /* Add hover effect to headings */
+  color: #007bff;  
 }
 
-/* Image card container */
 .sec {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .image-card {
@@ -305,31 +506,262 @@ header button{
 }
 
 .image-card:hover {
-  transform: scale(1.05); /* Slightly increase size on hover */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Add shadow on hover */
+  transform: scale(1.05); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  
 }
 
 .image-card-img {
-  width: 150px;
+  width: 100%;
   height: 200px;
+  max-width: 140px;
   border-radius: 5px;
-   /* Keeps aspect ratio and avoids stretching */
 }
 
-/* Add responsive behavior */
+.carousel {
+  margin-bottom: 10px;
+}
+
+/* Watchespage */
+
+.watchmain{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.watchcard{
+  border: 1px solid #ddd;
+  padding: 16px;
+  width: 280px;
+  background-color: #e0f2f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.watchcard:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.watchimage{
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.watchbrand{
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.watchprice{
+  font-size: 1rem;
+  color: #00796b;
+}
+
+@media (max-width:768px){
+  .watchcard{
+    width: 170px;
+    height: 360px;
+    padding: 8px;
+  }
+  
+  .watchbrand{
+    font-size: 0.5rem;
+  }
+  
+  .watchprice{
+    font-size: 0.6rem;
+  }
+
+  .carousel{
+    margin-top: 11%;
+  }
+  
+}
+
+/* Shoespage */
+
+.shoemain {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.shoecard {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 280px;
+  background-color: #e0f2f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.shoecard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.shoeimage {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.shoetitle {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.shoeprice {
+  font-size: 1rem;
+  color: #00796b;
+}
+
+.shoelink {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 768px) {
-  .section-col-left, .section-col-right {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .section-heading {
-    font-size: 1.5rem;
-  }
-  .image-card-img {
-    width: 100px;
-    height: 130px;
+  .shoecard {
+    width: 100%;
   }
 }
+
+
+/* WalletPage */
+
+.walletmain{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;  
+}
+
+.walletcard {
+  border: 1px solid #ddd;
+  padding: 16px;
+  width: 280px;
+  background-color: #e0f2f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.walletcard:hover {
+  transform: translateY(-5px);  
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+.walletimage {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.walletbrand{
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;  /* Text color for the brand */
+}
+
+.walletprice {
+  font-size: 1rem;
+  color: #00796b;  /* A greenish tone for the price */
+  font-weight: bold;
+}
+
+/* Remove underline and inherit colors for the link */
+.walletlink {
+  text-decoration: none;
+  color: inherit;  /* Inherit color from the parent elements */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .walletcard {
+    width: 100%;  /* Ensure cards take full width on smaller screens */
+  }
+}
+
+/* Bracelet page */
+
+.braceletmain{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+
+.braceletcard{
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 280px;
+  background-color: #e0f2f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.braceletcard:hover {
+  transform: translateY(-5px);  
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+.braceletimage {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  object-fit: contain;  
+}
+
+.braceletbrand {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;  
+}
+
+
+.braceletprice {
+  font-size: 1rem;
+  color: #00796b; 
+  font-weight: bold;
+}
+
+
+.braceletlink {
+  text-decoration: none;
+  color: inherit; 
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .bracelet-card {
+    width: 100%;  
+  }
+}
+
 
 /* Top bar  */
 

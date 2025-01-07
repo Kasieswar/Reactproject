@@ -1,10 +1,33 @@
+import wallet1 from './Images/wallet1.png'
+import wallet2 from './Images/wallet2.png'
+import wallet3 from './Images/wallet3.png'
+import wallet4 from './Images/wallet4.png'
+import wallet5 from './Images/wallet5.png'
+import wallet6 from './Images/wallet6.png'
+import wallet7 from './Images/wallet7.png'
+import wallet8 from './Images/wallet8.png'
+import wallet9 from './Images/wallet9.png'
+import wallet10 from './Images/wallet10.png'
+import wallet11 from './Images/wallet11.png'
+import wallet12 from './Images/wallet12.png'
+import wallet13 from './Images/wallet13.png'
+import wallet14 from './Images/wallet14.png'
+import wallet15 from './Images/wallet15.png'
+import wallet16 from './Images/wallet16.png'
+import wallet17 from './Images/wallet17.png'
+import wallet18 from './Images/wallet18.png'
+import wallet19 from './Images/wallet19.png'
+import wallet20 from './Images/wallet20.png'
+import wallet21 from './Images/wallet21.png'
+
+
 const WalletDet = [
     {
         id: 1,
         name: "Oliver Black Leather Wallet for Men, 6 Card Slot",
         brand: "URBAN FOREST",
         price: 449,
-        image: "https://m.media-amazon.com/images/I/71jCRAMYlRL._SL1500_.jpg",
+        image: wallet1,
         style: "Contemporary"
     },
     {
@@ -12,7 +35,7 @@ const WalletDet = [
         name: "Lavie Women's Safain Trifold Wallet | Ladies Purse Handbag",
         brand: "Lavie",
         price: 409,
-        image: "https://m.media-amazon.com/images/I/61yxVw4oFVL._SY695_.jpg",
+        image: wallet2,
         style: "Safain Small"
     },
     {
@@ -20,7 +43,7 @@ const WalletDet = [
         name: "HORNBULL Denial Navy Leather Wallet for Men",
         brand: "HORNBULL",
         price: 399,
-        image: "https://m.media-amazon.com/images/I/81zszsf9IWL._SL1500_.jpg",
+        image: wallet3,
         style: "Two Fold Wallet"
     },
     {
@@ -28,7 +51,7 @@ const WalletDet = [
         name: "Women's Vegan Leather Tri-fold Fashion Card Coin Holder Small Wallet",
         brand: "INOVERA",
         price: 419,
-        image: "https://m.media-amazon.com/images/I/61EciXxATmL._SY695_.jpg",
+        image: wallet4,
         style: "Wallet"
     },
     {
@@ -36,7 +59,7 @@ const WalletDet = [
         name: "WildHorn RFID Protected Leather Wallet for Men",
         brand: "WildHorn",
         price: 284,
-        image: "https://m.media-amazon.com/images/I/71qkUtD0kmL._SL1500_.jpg",
+        image: wallet5,
         style: "Classic"
     },
     {
@@ -44,7 +67,7 @@ const WalletDet = [
         name: "Valerie Women Wallet Wallet for Women and Girls",
         brand: "Valerie",
         price: 358,
-        image: "https://m.media-amazon.com/images/I/41Tyu+5K5PL._SX679_.jpg",
+        image: wallet6,
         style: "Wallet"
     },
     {
@@ -52,7 +75,7 @@ const WalletDet = [
         name:  "Doger Olive Green Leather Wallet For Men, 2 Card Slot",
         brand: "Rigohill",
         price: 439,
-        image: "https://m.media-amazon.com/images/I/71SYvtX2YmL._SL1500_.jpg",
+        image: wallet7,
         style: "Casual"
     },
     {
@@ -60,7 +83,7 @@ const WalletDet = [
         name: "Women's Zip Wallet | Made with Vegan Leather Material",
         brand: "DailyObjects",
         price: 721,
-        image: "https://m.media-amazon.com/images/I/611w1Y5DuvL._SY695_.jpg",
+        image: wallet8,
         style: "Wallet"
     },
     {
@@ -68,7 +91,7 @@ const WalletDet = [
         name: "London Alley Elk Vintage Brown Leather Wallet For Men, 6 Card Slot",
         brand: "London Alley",
         price: 479,
-        image: "https://m.media-amazon.com/images/I/91nomXcCMvL._SL1500_.jpg",
+        image: wallet9,
         style: "Vintage"
     },
     {
@@ -76,7 +99,7 @@ const WalletDet = [
         name: "ZOUK Women's Handcrafted Classic Chain Wallet",
         brand: "ZOUK",
         price: 484,
-        image: "https://m.media-amazon.com/images/I/71WEZVSdueL._SY695_.jpg",
+        image: wallet10,
         style: "Wallet"
     },
     {
@@ -84,7 +107,7 @@ const WalletDet = [
         name: "Men's Personalized Wallet I Customized Slim Stylish Leather Purse",
         brand: "Innovative Gifts",
         price: 419,
-        image: "https://m.media-amazon.com/images/I/71MYGLSCr0L._SL1500_.jpg",
+        image: wallet11,
         style: "Modern"
     },
     {
@@ -92,7 +115,7 @@ const WalletDet = [
         name: "Funk For Hire Women Printed Petrol Blue Leatherette Wallet",
         brand: "Funk For Hire",
         price: 633,
-        image: "https://m.media-amazon.com/images/I/817KadKjOiL._SL1500_.jpg",
+        image: wallet12,
         style: "Modern"
     },
     {
@@ -100,7 +123,7 @@ const WalletDet = [
         name: "The Wallet Store Urban Pop RFID Protection Wallet",
         brand: "The Wallet Store",
         price: 1394,
-        image: "https://m.media-amazon.com/images/I/71ByBRv5HKL._SL1500_.jpg",
+        image: wallet13,
         style: "Casual"
     },
     {
@@ -108,7 +131,7 @@ const WalletDet = [
         name: "Niwlix Leather Small Wallet For Women Slim Mini Wallet ",
         brand: "Niwlix",
         price: 378,
-        image: "https://m.media-amazon.com/images/I/619JKNPzvbL._SL1500_.jpg",
+        image: wallet14,
         style: "Classic"
     },
     {
@@ -116,7 +139,7 @@ const WalletDet = [
         name: "Felix Men's Leather Wallet - Brown (4 Card Slot)",
         brand: "Tommy Hilfiger",
         price: 999,
-        image: "https://m.media-amazon.com/images/I/71TPFlJ5FjL._SL1200_.jpg",
+        image: wallet15,
         style: "Casual"
     },
     {
@@ -124,7 +147,7 @@ const WalletDet = [
         name: "ShopMantra Wallet for Women's |Clutch |Vegan Leather",
         brand: "ShopMantra",
         price: 495,
-        image: "https://m.media-amazon.com/images/I/81q18EgejYL._SL1500_.jpg",
+        image: wallet16,
         style: "Casual"
     },
     {
@@ -132,7 +155,7 @@ const WalletDet = [
         name: "Scarters Faux Leather Abundance Wallet For Men ",
         brand: "Scarters",
         price: 2424,
-        image: "https://m.media-amazon.com/images/I/91J4R+s4DNL._SL1500_.jpg",
+        image: wallet17,
         style: "Minimalist"
     },
     {
@@ -140,7 +163,7 @@ const WalletDet = [
         name: "PALAY® Women's Long Wallet Tassel PU Leather",
         brand: "PALAY®",
         price: 399,
-        image: "https://m.media-amazon.com/images/I/61K7z7EaL1L._SL1024_.jpg",
+        image: wallet18,
         style: "Diaper Bags"
     },
     {
@@ -148,7 +171,7 @@ const WalletDet = [
         name: "Leo Vintage Cognac Leather Wallet for Men",
         brand: "URBAN FOREST",
         price: 449,
-        image: "https://m.media-amazon.com/images/I/91Oh2tcgE0L._SL1500_.jpg",
+        image: wallet19,
         style: "Vintage"
     },
     {
@@ -156,7 +179,7 @@ const WalletDet = [
         name: "Unisex Adult Spencer Leather Wallet Combo Gift Set",
         brand: "URBAN FOREST",
         price: 1309,
-        image: "https://m.media-amazon.com/images/I/61kqMYzFpeL._SX695_.jpg",
+        image: wallet20,
         style: "Modern"
     },
     {
@@ -164,7 +187,7 @@ const WalletDet = [
         name: "Fastrack Grey And Red Leather Men's Wallet ",
         brand: "Fastrack",
         price: 876,
-        image: "https://m.media-amazon.com/images/I/91ERNcx0G1L._SL1500_.jpg",
+        image: wallet21,
         style: "Wallets"
     }
 ]
