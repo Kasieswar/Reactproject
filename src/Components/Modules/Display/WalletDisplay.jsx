@@ -10,8 +10,8 @@ import { CartContext } from './CartContext'
 
 function WalletDisplay() {
     let { id } = useParams()
-    const { cart, addToCart } = useContext(CartContext)
-    let productDisplay = WalletDet.find((item) => item.id == id)
+    const { addToCart } = useContext(CartContext)
+    let productDisplay = WalletDet.find((item) => item.id === id)
 
 
     return (

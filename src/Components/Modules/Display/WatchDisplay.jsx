@@ -10,8 +10,8 @@ import { CartContext } from './CartContext'
 
 function WatchDisplay() {
     let { id } = useParams()
-    const { cart, addToCart } = useContext(CartContext)
-    let productDisplay = WatchDet.find((item)=> item.id == id)
+    const { addToCart } = useContext(CartContext)
+    let productDisplay = WatchDet.find((item)=> item.id === id)
   return (
     <div className='container-fluid p-5'>
       <Row>

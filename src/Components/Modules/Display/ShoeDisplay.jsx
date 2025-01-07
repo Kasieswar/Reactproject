@@ -10,8 +10,8 @@ import { CartContext } from './CartContext'
 
 function ShoeDisplay() {
     let { id } = useParams()
-    const { cart, addToCart } = useContext(CartContext)
-    let productDisplay = ShoeDet.find((item)=> item.id == id)
+    const { addToCart } = useContext(CartContext)
+    let productDisplay = ShoeDet.find((item)=> item.id === id)
   return (
     <div className='container-fluid p-5'>
       <Row>

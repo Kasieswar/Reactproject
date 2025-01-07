@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react'
+import React, {  useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import BraceletDet from '../../Data/BraceletDet'
 import { Col, Row } from 'react-bootstrap'
@@ -10,8 +10,8 @@ import { CartContext } from './CartContext'
 function BraceletDisplay() {
   
     let { id } = useParams()
-    const { cart, addToCart } = useContext(CartContext)
-    let productDisplay = BraceletDet.find((item)=> item.id == id)
+    const { addToCart } = useContext(CartContext)
+    let productDisplay = BraceletDet.find((item)=> item.id === id)
   return (
     <div className='container-fluid p-5'>
       <Row>
